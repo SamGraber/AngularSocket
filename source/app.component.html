@@ -1,0 +1,5 @@
+Incoming chat:
+<ul>
+	<li *ngFor="let message of messages() | async">{{message}}</li>
+</ul>
+<input type="text" [(ngModel)]="newMessage" (keydown.enter)="addMessage()" />
